@@ -237,6 +237,7 @@ $('fields').addEventListener('input',calculate);$('reset').addEventListener('cli
 })();
 </script>
 
+<script>
 /* Additional creator tools, local preferences and file processing */
 (()=>{
 const root=document.getElementById('creator-suite');if(!root)return;
@@ -290,6 +291,8 @@ $('suite-search').addEventListener('input',refreshCards);$('suite-favorites').ad
 $('language').addEventListener('change',e=>{lang=e.target.value;const names=lang==='ru'?['Сжатие изображений','Изменение размера изображения','Калькулятор YouTube RPM','Размер аудиофайла','Планировщик битрейта стрима','Счётчик текста']:['Image Compressor','Image Resizer','YouTube RPM Calculator','Audio File Size','Stream Bitrate Planner','Text Counter'];document.querySelectorAll('.suite-card').forEach((card,i)=>{card.querySelector('b').textContent=names[i]});$('suite-title').textContent=t('title');$('suite-subtitle').textContent=t('subtitle');$('suite-search').placeholder=t('search');$('suite-favorites').textContent=t('favorites');document.querySelector('[data-suite-filter="all"]').textContent=t('all');workspace(active)});
 $('suite-title').textContent=t('title');$('suite-subtitle').textContent=t('subtitle');$('suite-search').placeholder=t('search');$('suite-favorites').textContent=t('favorites');document.querySelector('[data-suite-filter="all"]').textContent=t('all');refreshCards();renderRecent();workspace('compress');
 })();
+
+</script>
 
 <!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "dc7da355928248fa85dc4fc06e64e73d"}'></script><!-- End Cloudflare Web Analytics -->
 </body>
