@@ -8,7 +8,7 @@
 <title>CreatorLab — Tools for Creators</title>
 <style>
 :root{color-scheme:dark;--bg:#090d16;--panel:#111a29;--panel2:#0d1625;--line:#26354c;--muted:#94a1b5;--text:#edf1fa;--accent:#91a0ff;--accent2:#7486f4}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at 75% -15%,#1c2850 0,transparent 38%),var(--bg);color:var(--text);font:15px/1.55 Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at 75% -15%,#28356b 0,transparent 38%),radial-gradient(ellipse at 5% 48%,#123e4a55 0,transparent 32%),radial-gradient(ellipse at 95% 78%,#45234d44 0,transparent 30%),var(--bg);background-attachment:fixed;color:var(--text);font:15px/1.55 Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
 button,input,select{font:inherit}button{cursor:pointer}.wrap{width:min(1060px,calc(100% - 40px));margin:auto}
 header{height:76px;border-bottom:1px solid #202b3e;display:flex;align-items:center;justify-content:space-between}
 .brand{display:flex;align-items:center;gap:11px;text-decoration:none;color:inherit}.brandmark{width:39px;height:39px;border-radius:12px;background:linear-gradient(135deg,#a5b0ff,#697cf0);display:grid;place-items:center;color:#0b1120;font-weight:900;font-size:22px;box-shadow:0 8px 28px #7788f533}.brandname{font-weight:800;letter-spacing:-.5px;font-size:18px}.brandname span{color:var(--accent)}.brandtag{font-size:9px;letter-spacing:1.5px;color:var(--muted);margin-top:-3px}
@@ -16,10 +16,10 @@ header{height:76px;border-bottom:1px solid #202b3e;display:flex;align-items:cent
 .hero{padding:66px 0 38px}.eyebrow,.label{font-size:10px;letter-spacing:1.5px;text-transform:uppercase;color:#9eacff;font-weight:700}.eyebrow{display:flex;align-items:center;gap:9px;margin-bottom:18px}.eyebrow:before{content:"✳";font-size:15px}.hero h1{font-size:clamp(40px,7vw,66px);line-height:1.02;letter-spacing:-3px;margin:0 0 18px;font-weight:850}.hero h1 span{color:var(--accent)}.hero p{color:var(--muted);font-size:16px;max-width:610px;margin:0}
 .stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:26px 0 43px}.stat,.panel{background:linear-gradient(145deg,#131e30,#101827);border:1px solid var(--line);border-radius:15px}.stat{padding:17px 19px}.stat strong{font-size:25px;letter-spacing:-1px;display:block}.stat span{color:var(--muted);font-size:12px}
 .section-head{display:flex;align-items:center;gap:13px;margin-bottom:14px}.section-head .label{color:#8291ab}.filters{display:flex;flex-wrap:wrap;gap:6px}.filter{border:0;background:transparent;color:#9aa8bd;border-radius:8px;padding:8px 12px;font-size:12px}.filter.active{background:#1c2941;color:#fff}
-.tools{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:25px}.tool{background:#121c2c;border:1px solid #26364d;border-radius:13px;text-align:left;padding:17px;color:inherit;transition:.18s;min-height:140px}.tool:hover{border-color:#7588f7;transform:translateY(-2px);background:#17243a}.tool.active{border-color:#8195ff;background:#1a2741;box-shadow:0 0 0 1px #8195ff22}.tool[hidden]{display:none}.tool-icon{height:39px;width:39px;border-radius:11px;background:#202e4a;display:grid;place-items:center;font-size:20px;margin-bottom:13px}.tool b{display:block;font-size:14px}.tool small{display:block;color:var(--muted);font-size:12px;margin-top:4px}
-.calculator{padding:25px 26px 23px}.calc-top{display:flex;justify-content:space-between;gap:15px;margin-bottom:24px}.calc-top h2{font-size:23px;letter-spacing:-.7px;margin:5px 0 4px}.calc-top p{color:var(--muted);font-size:13px;margin:0}.calc-emoji{font-size:26px;color:#b4beff}.fields{display:grid;grid-template-columns:repeat(2,1fr);gap:17px}.field-label{font-size:13px;color:#e2e8f4}.field{display:block;width:100%;margin-top:7px;padding:11px 12px;border:1px solid #30415b;border-radius:9px;background:#0b1321;color:#fff;outline:none}.field:focus{border-color:#8b9aff;box-shadow:0 0 0 3px #8195ff18}.result{background:linear-gradient(110deg,#0b1422,#111d31);border:1px solid #2b3c59;border-radius:12px;padding:16px 18px;margin-top:21px}.result .label{color:#9cabc5}.result-value{font-size:clamp(28px,5vw,37px);font-weight:850;letter-spacing:-1.5px;color:#aab5ff;margin-top:3px;overflow-wrap:anywhere}.result-detail{font-size:12px;color:var(--muted);margin-top:4px}.actions{display:flex;gap:10px;align-items:center;margin-top:17px;flex-wrap:wrap}.primary{border:0;background:var(--accent2);color:#090f1e;border-radius:9px;padding:11px 17px;font-weight:750}.primary:hover{background:#a1adff}.secondary{border:0;background:transparent;color:#a8b5ca;padding:10px 12px;border-radius:8px;font-size:13px}.secondary:hover{background:#1a263b;color:white}.hint{font-size:11px;color:#8190a8;margin-top:12px}
-.about{margin:42px 0 0;padding:25px 0;border-top:1px solid #253147}.about h3{font-size:19px;margin:7px 0}.about p{color:var(--muted);font-size:13px;max-width:650px;margin:0}footer{border-top:1px solid #253147;padding:20px 0 28px;color:#8190a8;font-size:11px;display:flex;justify-content:space-between;gap:12px}
-@media(max-width:700px){.wrap{width:min(100% - 28px,600px)}header{height:67px}.header-right{gap:10px}.header-right a{display:none}.hero{padding:48px 0 25px}.hero h1{letter-spacing:-2px}.stats{gap:8px;margin:23px 0 34px}.stat{padding:13px}.stat strong{font-size:21px}.tools{grid-template-columns:repeat(2,1fr);gap:9px}.tool{min-height:125px;padding:14px}.calculator{padding:19px 16px}.calc-top h2{font-size:20px}.fields{gap:13px}.fields{grid-template-columns:1fr 1fr}}
+.tools{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:25px}.tool{background:#121c2c;border:1px solid #26364d;border-radius:13px;text-align:left;padding:17px;color:inherit;transition:.18s;min-height:140px}.tool:hover{border-color:#7588f7;transform:translateY(-2px);background:#17243a}.tool.active{border-color:#8195ff;background:#1a2741;box-shadow:0 0 0 1px #8195ff22}.tool[hidden]{display:none}.tool-icon{height:39px;width:39px;border-radius:11px;background:linear-gradient(135deg,#26395a,#26304b);display:grid;place-items:center;font-size:20px;margin-bottom:13px;box-shadow:inset 0 1px #ffffff12}.tool b{display:block;font-size:14px}.tool small{display:block;color:var(--muted);font-size:12px;margin-top:4px}
+.calculator{padding:25px 26px 23px}.calc-top{display:flex;justify-content:space-between;gap:15px;margin-bottom:24px}.calc-top h2{font-size:23px;letter-spacing:-.7px;margin:5px 0 4px}.calc-top p{color:var(--muted);font-size:13px;margin:0}.calc-emoji{font-size:26px;color:#b4beff}.fields{display:grid;grid-template-columns:repeat(2,1fr);gap:17px}.field-label{font-size:13px;color:#e2e8f4}.field{display:block;width:100%;margin-top:7px;padding:11px 12px;border:1px solid #30415b;border-radius:9px;background:#0b1321;color:#fff;outline:none}.field:focus{border-color:#8b9aff;box-shadow:0 0 0 3px #8195ff18}.result{position:relative;overflow:hidden;background:linear-gradient(110deg,#101b31,#17213b 55%,#172c38);border:1px solid #35466a;border-radius:12px;padding:16px 18px;margin-top:21px;box-shadow:0 12px 35px #00000020}.result:before{content:"";position:absolute;inset:0 auto 0 0;width:3px;background:linear-gradient(#9c8cff,#5be0d0)}.result .label{color:#9cabc5}.result-value{font-size:clamp(28px,5vw,37px);font-weight:850;letter-spacing:-1.5px;color:#aab5ff;margin-top:3px;overflow-wrap:anywhere}.result-detail{font-size:12px;color:var(--muted);margin-top:4px}.actions{display:flex;gap:10px;align-items:center;margin-top:17px;flex-wrap:wrap}.presets{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-top:17px}.presets[hidden]{display:none}.preset{border:1px solid #354564;background:#121e31;color:#c5d0e5;border-radius:99px;padding:7px 12px;font-size:11px;transition:.2s}.preset:hover{border-color:#8c9aff;background:#202d49;transform:translateY(-2px)}.copy-status{font-size:11px;color:#77d9c7;min-width:90px}.primary{border:0;background:var(--accent2);color:#090f1e;border-radius:9px;padding:11px 17px;font-weight:750}.primary:hover{background:#a1adff}.secondary{border:0;background:transparent;color:#a8b5ca;padding:10px 12px;border-radius:8px;font-size:13px}.secondary:hover{background:#1a263b;color:white}.hint{font-size:11px;color:#8190a8;margin-top:12px}
+.about{margin:42px 0 0;padding:25px 0;border-top:1px solid #253147}.about h3{background:linear-gradient(90deg,#edf1fa,#aab5ff 55%,#78dccc);background-clip:text;-webkit-background-clip:text;color:transparent}.about h3{font-size:19px;margin:7px 0}.about p{color:var(--muted);font-size:13px;max-width:650px;margin:0}footer{border-top:1px solid #253147;padding:20px 0 28px;color:#8190a8;font-size:11px;display:flex;justify-content:space-between;gap:12px}
+@media(max-width:700px){.wrap{width:min(100% - 28px,600px)}.tools{grid-template-columns:repeat(2,1fr)}header{height:67px}.header-right{gap:10px}.header-right a{display:none}.hero{padding:48px 0 25px}.hero h1{letter-spacing:-2px}.stats{gap:8px;margin:23px 0 34px}.stat{padding:13px}.stat strong{font-size:21px}.tools{grid-template-columns:repeat(2,1fr);gap:9px}.tool{min-height:125px;padding:14px}.calculator{padding:19px 16px}.calc-top h2{font-size:20px}.fields{gap:13px}.fields{grid-template-columns:1fr 1fr}}
 @media(max-width:390px){.fields{grid-template-columns:1fr}.free-pill{font-size:11px}.hero h1{font-size:39px}}
 
 /* Smooth entrance and interaction motion */
@@ -42,6 +42,22 @@ header{height:76px;border-bottom:1px solid #202b3e;display:flex;align-items:cent
 @keyframes result-in{from{opacity:.65;transform:translateY(5px)}to{opacity:1;transform:translateY(0)}}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
 
+
+/* Color, depth and a little motion */
+@keyframes ambient-drift{0%,100%{background-position:75% -15%,5% 48%,95% 78%}50%{background-position:68% -8%,12% 55%,88% 70%}}
+body{background-size:100% 100%,140% 140%,140% 140%,auto;animation:ambient-drift 22s ease-in-out infinite}
+.stat,.panel,.tool{box-shadow:0 14px 38px #00000018}
+.tool{position:relative;overflow:hidden}
+.tool:after{content:"";position:absolute;inset:0;background:linear-gradient(115deg,transparent 20%,#ffffff0c 48%,transparent 72%);transform:translateX(-120%);transition:transform .65s ease;pointer-events:none}
+.tool:hover:after{transform:translateX(120%)}
+.tool.active{background:linear-gradient(135deg,#202c4a,#1b3040);box-shadow:0 10px 32px #7486f422,inset 0 1px #ffffff10}
+.tool.active .tool-icon{background:linear-gradient(135deg,#3b4775,#28545c);color:#d9e4ff}
+.calc-emoji{animation:emoji-float 4s ease-in-out infinite}
+@keyframes emoji-float{0%,100%{transform:translateY(0) rotate(-3deg)}50%{transform:translateY(-6px) rotate(3deg)}}
+.result-value{background:linear-gradient(90deg,#b5bcff,#79e2d0);background-clip:text;-webkit-background-clip:text;color:transparent}
+.preset:active{transform:scale(.96)}
+@media(prefers-reduced-motion:reduce){body{animation:none!important}}
+
 </style>
 </head>
 <body>
@@ -51,7 +67,7 @@ header{height:76px;border-bottom:1px solid #202b3e;display:flex;align-items:cent
 </div></header>
 <main class="wrap">
 <section class="hero"><div class="eyebrow">THE CREATOR TOOLKIT <span style="color:#52627d">/</span> VERSION 01</div><h1>Create smarter.<br><span>Work faster.</span></h1><p>A collection of simple, powerful tools for video creators, streamers and digital makers. Everything you need, right here.</p></section>
-<section class="stats" aria-label="Site overview"><div class="stat"><strong>04</strong><span>Available tools</span></div><div class="stat"><strong>Free</strong><span>Always accessible</span></div><div class="stat"><strong>∞</strong><span>Creative potential</span></div></section>
+<section class="stats" aria-label="Site overview"><div class="stat"><strong>06</strong><span>Available tools</span></div><div class="stat"><strong>Free</strong><span>Always accessible</span></div><div class="stat"><strong>∞</strong><span>Creative potential</span></div></section>
 <section id="tools">
 <div class="section-head"><span class="label">EXPLORE</span><div class="filters"><button class="filter active" data-filter="all">All tools</button><button class="filter" data-filter="video">Video</button><button class="filter" data-filter="image">Image</button><button class="filter" data-filter="other">Other</button></div></div>
 <div class="tools">
@@ -59,12 +75,15 @@ header{height:76px;border-bottom:1px solid #202b3e;display:flex;align-items:cent
 <button class="tool" data-tool="bitrate" data-category="video"><span class="tool-icon">⌁</span><b>Bitrate</b><small>Calculate target bitrate</small></button>
 <button class="tool" data-tool="ratio" data-category="image"><span class="tool-icon">▧</span><b>Aspect ratio</b><small>Resize your canvas</small></button>
 <button class="tool" data-tool="download" data-category="other"><span class="tool-icon">⇩</span><b>Download time</b><small>Estimate transfer time</small></button>
+<button class="tool" data-tool="frames" data-category="video"><span class="tool-icon">▤</span><b>Frame count</b><small>Calculate frames in a clip</small></button>
+<button class="tool" data-tool="storage" data-category="other"><span class="tool-icon">▣</span><b>Storage planner</b><small>Estimate how many videos fit</small></button>
 </div>
 <div class="panel calculator">
 <div class="calc-top"><div><div class="label">CALCULATOR / <span id="type">VIDEO</span></div><h2 id="title">Video file size calculator</h2><p id="description">Estimate the final size of your video based on bitrate and duration.</p></div><div class="calc-emoji" id="emoji">◫</div></div>
 <div class="fields" id="fields"></div>
+<div class="presets" id="presets" hidden><span class="label">QUICK PRESETS</span><button class="preset" data-preset="wide">16:9 · YouTube</button><button class="preset" data-preset="vertical">9:16 · Shorts</button><button class="preset" data-preset="square">1:1 · Square</button><button class="preset" data-preset="portrait">4:5 · Portrait</button></div>
 <div class="result" aria-live="polite"><div class="label" id="result-label">ESTIMATED FILE SIZE</div><div class="result-value" id="result">1.15 GB</div><div class="result-detail" id="detail">Approximate size including audio, excluding container overhead.</div></div>
-<div class="actions"><button class="secondary" id="reset">Reset values</button></div><div class="hint">Results update automatically as you type. Calculations run in your browser; your inputs are not uploaded anywhere.</div>
+<div class="actions"><button class="secondary" id="copy-result">Copy result</button><button class="secondary" id="reset">Reset values</button><span class="copy-status" id="copy-status" aria-live="polite"></span></div><div class="hint">Results update automatically as you type. Calculations run in your browser; your inputs are not uploaded anywhere.</div>
 </div>
 </section>
 <section class="about" id="about"><div class="label">BUILT FOR CREATORS</div><h3>Less guessing. More creating.</h3><p>CreatorLab brings everyday production calculations into one clean workspace. No complicated software, no unnecessary steps — just useful tools.</p></section>
@@ -77,7 +96,9 @@ const configs={
 size:{title:'Video file size calculator',desc:'Estimate the final size of your video based on bitrate and duration.',type:'VIDEO',emoji:'◫',label:'ESTIMATED FILE SIZE',fields:[['Video bitrate (Mbps)','bitrate','15'],['Duration (minutes)','duration','10'],['Audio bitrate (kbps)','audio','320'],['Unit','unit','1000']]},
 bitrate:{title:'Target bitrate calculator',desc:'Find an approximate video bitrate for your desired file size.',type:'VIDEO',emoji:'⌁',label:'TARGET VIDEO BITRATE',fields:[['Target size (MB)','target','500'],['Duration (minutes)','duration','10'],['Audio bitrate (kbps)','audio','320']]},
 ratio:{title:'Aspect ratio calculator',desc:'Find dimensions that preserve your selected aspect ratio.',type:'IMAGE',emoji:'▧',label:'NEW HEIGHT',fields:[['Original width (px)','width','1920'],['Original height (px)','height','1080'],['New width (px)','newwidth','1280']]},
-download:{title:'Download time calculator',desc:'Estimate how long a file will take to download.',type:'OTHER',emoji:'⇩',label:'ESTIMATED DOWNLOAD TIME',fields:[['File size (GB)','filesize','10'],['Internet speed (Mbps)','speed','100']]}
+download:{title:'Download time calculator',desc:'Estimate how long a file will take to download.',type:'OTHER',emoji:'⇩',label:'ESTIMATED DOWNLOAD TIME',fields:[['File size (GB)','filesize','10'],['Internet speed (Mbps)','speed','100']]},
+frames:{title:'Video frame counter',desc:'Find the total number of frames in a clip at your chosen frame rate.',type:'VIDEO',emoji:'▤',label:'TOTAL FRAME COUNT',fields:[['Clip duration (seconds)','clipduration','30'],['Frame rate (FPS)','fps','60']]},
+storage:{title:'Storage planner',desc:'Estimate how many videos fit on your available drive space.',type:'OTHER',emoji:'▣',label:'VIDEO CAPACITY',fields:[['Available storage (GB)','available','500'],['Average video size (GB)','average','12']]}
 };
 let current='size';
 function field([label,id,value]){
@@ -85,7 +106,7 @@ if(id==='unit')return `<label class="field-label">${label}<select class="field" 
 return `<label class="field-label">${label}<input class="field" id="${id}" type="number" min="0" step="any" value="${value}" inputmode="decimal"></label>`;
 }
 function render(){
-const c=configs[current];$('title').textContent=c.title;$('description').textContent=c.desc;$('type').textContent=c.type;$('emoji').textContent=c.emoji;$('result-label').textContent=c.label;$('fields').innerHTML=c.fields.map(field).join('');
+const c=configs[current];$('presets').hidden=current!=='ratio';$('copy-status').textContent='';$('title').textContent=c.title;$('description').textContent=c.desc;$('type').textContent=c.type;$('emoji').textContent=c.emoji;$('result-label').textContent=c.label;$('fields').innerHTML=c.fields.map(field).join('');
 document.querySelectorAll('[data-tool]').forEach(b=>b.classList.toggle('active',b.dataset.tool===current));calculate();
 }
 function n(id){return Number($(id)?.value||0)}
@@ -110,10 +131,20 @@ if(f<=0||s<=0)return show('Check your inputs','File size and internet speed must
 const sec=f*8*1000/s,days=Math.floor(sec/86400),hours=Math.floor(sec%86400/3600),mins=Math.floor(sec%3600/60),secs=Math.round(sec%60);
 const parts=[];if(days)parts.push(days+'d');if(hours)parts.push(hours+'h');if(mins)parts.push(mins+'m');if(!days&&!hours)parts.push(secs+'s');
 show(parts.join(' '),'Theoretical estimate. Actual download time depends on network conditions.');
+}else if(current==='frames'){
+const duration=n('clipduration'),fps=n('fps');
+if(duration<=0||fps<=0)return show('Check your inputs','Clip duration and frame rate must be positive.');
+const total=Math.round(duration*fps);show(total.toLocaleString()+' frames','At '+fps+' FPS across '+duration+' seconds of footage.');
+}else if(current==='storage'){
+const available=n('available'),average=n('average');
+if(available<=0||average<=0)return show('Check your inputs','Storage space and average video size must be positive.');
+const count=Math.floor(available/average),left=available-count*average;show(count.toLocaleString()+' videos','You could store '+count+' full videos, with '+left.toFixed(2)+' GB remaining.');
 }
 }
 document.querySelectorAll('[data-tool]').forEach(b=>b.addEventListener('click',()=>{current=b.dataset.tool;render()}));
 document.querySelectorAll('[data-filter]').forEach(b=>b.addEventListener('click',()=>{document.querySelectorAll('[data-filter]').forEach(x=>x.classList.toggle('active',x===b));document.querySelectorAll('[data-tool]').forEach(t=>t.hidden=b.dataset.filter!=='all'&&t.dataset.category!==b.dataset.filter)}));
+$('presets').addEventListener('click',e=>{const b=e.target.closest('[data-preset]');if(!b)return;const presets={wide:[1920,1080],vertical:[1080,1920],square:[1080,1080],portrait:[1080,1350]};const [w,h]=presets[b.dataset.preset];$('width').value=w;$('height').value=h;$('newwidth').value=w;calculate();});
+$('copy-result').addEventListener('click',async()=>{const value=$('result').textContent+' — '+$('detail').textContent;try{await navigator.clipboard.writeText(value);$('copy-status').textContent='Copied to clipboard ✓';}catch(e){$('copy-status').textContent='Clipboard unavailable';}});
 $('fields').addEventListener('input',calculate);$('reset').addEventListener('click',render);$('year').textContent=new Date().getFullYear();render();
 })();
 </script>
