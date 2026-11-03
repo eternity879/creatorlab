@@ -22,7 +22,7 @@
   "url": "https://eternity879.github.io/creatorlab/",
   "applicationCategory": "UtilitiesApplication",
   "operatingSystem": "Any",
-  "description": "Free online creator tools for images, video, audio, YouTube, streaming and social media.",
+  "description": "Free online tools for content creators: image compression, image resizing, video and audio calculators, YouTube RPM estimates, streaming bitrate planning and text counting.",
   "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
 }
 </script>
@@ -119,7 +119,7 @@ body{background-size:100% 100%,140% 140%,140% 140%,auto;animation:ambient-drift 
 <body>
 <header><div class="wrap" style="display:flex;align-items:center;justify-content:space-between;width:100%">
 <a class="brand" href="#"><div class="brandmark">C</div><div><div class="brandname">creator<span>lab</span></div><div class="brandtag">TOOLS FOR CREATORS</div></div></a>
-<div class="header-right"><a href="#tools" data-i18n="navTools">Tools</a><a href="#about" data-i18n="navAbout">About</a><label class="language-wrap"><span aria-hidden="true">◎</span><select id="language" aria-label="Choose language"><option value="en">EN</option><option value="ru">RU</option></select></label><span class="free-pill" data-i18n="free">✦ Free tools</span></div>
+<div class="header-right"><a href="#tools" data-i18n="navTools">Tools</a><a href="#creator-suite">More tools</a><a href="#about" data-i18n="navAbout">About</a><label class="language-wrap"><span aria-hidden="true">◎</span><select id="language" aria-label="Choose language"><option value="en">EN</option><option value="ru">RU</option></select></label><span class="free-pill" data-i18n="free">✦ Free tools</span></div>
 </div></header>
 <main class="wrap">
 <section class="hero"><div class="eyebrow" data-i18n="eyebrow">THE CREATOR TOOLKIT</div><h1 data-i18n="heroTitle">Create smarter.<br><span>Work faster.</span></h1><p data-i18n="heroText">Free online tools for creators: compress and resize images, estimate YouTube revenue, calculate video and audio sizes, plan streaming bitrates and more.</p></section>
@@ -156,12 +156,12 @@ body{background-size:100% 100%,140% 140%,140% 140%,auto;animation:ambient-drift 
     <button class="suite-fav" id="suite-favorites">☆ Favorites</button>
   </div>
   <div class="suite-grid" id="suite-grid">
-    <button class="suite-card" data-suite-tool="compress" data-suite-category="image"><span class="tool-icon">▧</span><button class="fav" aria-label="Add to favorites">☆</button><b>Image Compressor</b><small>Compress JPG, PNG and WebP in your browser</small></button>
-    <button class="suite-card" data-suite-tool="resize" data-suite-category="image"><span class="tool-icon">⤢</span><button class="fav" aria-label="Add to favorites">☆</button><b>Image Resizer</b><small>Resize images and export a new copy</small></button>
-    <button class="suite-card" data-suite-tool="rpm" data-suite-category="youtube"><span class="tool-icon">▥</span><button class="fav" aria-label="Add to favorites">☆</button><b>YouTube RPM Calculator</b><small>Estimate revenue from views and RPM</small></button>
-    <button class="suite-card" data-suite-tool="audio" data-suite-category="audio"><span class="tool-icon">♫</span><button class="fav" aria-label="Add to favorites">☆</button><b>Audio File Size</b><small>Estimate uncompressed WAV file size</small></button>
-    <button class="suite-card" data-suite-tool="stream" data-suite-category="streaming"><span class="tool-icon">◉</span><button class="fav" aria-label="Add to favorites">☆</button><b>Stream Bitrate Planner</b><small>Estimate a starting bitrate for your stream</small></button>
-    <button class="suite-card" data-suite-tool="text" data-suite-category="social"><span class="tool-icon">¶</span><button class="fav" aria-label="Add to favorites">☆</button><b>Text Counter</b><small>Count characters, words and lines</small></button>
+    <div class="suite-card" role="button" tabindex="0" data-suite-tool="compress" data-suite-category="image"><span class="tool-icon">▧</span><button type="button" class="fav" aria-label="Add to favorites">☆</button><b>Image Compressor</b><small>Compress JPG, PNG and WebP in your browser</small></div>
+    <div class="suite-card" role="button" tabindex="0" data-suite-tool="resize" data-suite-category="image"><span class="tool-icon">⤢</span><button type="button" class="fav" aria-label="Add to favorites">☆</button><b>Image Resizer</b><small>Resize images and export a new copy</small></div>
+    <div class="suite-card" role="button" tabindex="0" data-suite-tool="rpm" data-suite-category="youtube"><span class="tool-icon">▥</span><button type="button" class="fav" aria-label="Add to favorites">☆</button><b>YouTube RPM Calculator</b><small>Estimate revenue from views and RPM</small></div>
+    <div class="suite-card" role="button" tabindex="0" data-suite-tool="audio" data-suite-category="audio"><span class="tool-icon">♫</span><button type="button" class="fav" aria-label="Add to favorites">☆</button><b>Audio File Size</b><small>Estimate uncompressed WAV file size</small></div>
+    <div class="suite-card" role="button" tabindex="0" data-suite-tool="stream" data-suite-category="streaming"><span class="tool-icon">◉</span><button type="button" class="fav" aria-label="Add to favorites">☆</button><b>Stream Bitrate Planner</b><small>Estimate a starting bitrate for your stream</small></div>
+    <div class="suite-card" role="button" tabindex="0" data-suite-tool="text" data-suite-category="social"><span class="tool-icon">¶</span><button type="button" class="fav" aria-label="Add to favorites">☆</button><b>Text Counter</b><small>Count characters, words and lines</small></div>
   </div>
   <div class="panel suite-workspace" id="suite-workspace" aria-live="polite">
     <div class="label">QUICK TOOL</div><h3 id="suite-tool-title">Choose a tool</h3><p id="suite-tool-desc">Select any card above to open its workspace.</p>
