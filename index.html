@@ -4,11 +4,11 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="google-site-verification" content="rXKL3oLbYjXhMEoewcpHnt2_s0iUeEi5-A_KRAkhzy8" />
-<meta name="description" content="Free online video calculators: estimate video file size, target bitrate, aspect ratios, download time, frame counts and storage capacity.">
+<meta name="description" content="Free creator tools: compress and resize images, estimate YouTube revenue, calculate video and audio sizes, plan streaming bitrates and count text.">
 <meta name="theme-color" content="#090d16">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="CreatorLab">
-<meta property="og:title" content="Free Video & Creator Calculators | CreatorLab">
+<meta property="og:title" content="Free Online Tools for Content Creators | CreatorLab">
 <meta property="og:description" content="Free online tools for video creators: file size, bitrate, aspect ratio, download time, frames and storage calculators.">
 <meta property="og:url" content="https://eternity879.github.io/creatorlab/">
 <meta name="twitter:card" content="summary">
@@ -22,7 +22,7 @@
   "url": "https://eternity879.github.io/creatorlab/",
   "applicationCategory": "UtilitiesApplication",
   "operatingSystem": "Any",
-  "description": "Free online calculators for video creators, including video file size, bitrate, aspect ratio, download time, frame count and storage planning.",
+  "description": "Free online creator tools for images, video, audio, YouTube, streaming and social media.",
   "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
 }
 </script>
@@ -78,6 +78,42 @@ body{background-size:100% 100%,140% 140%,140% 140%,auto;animation:ambient-drift 
 .preset:active{transform:scale(.96)}
 @media(prefers-reduced-motion:reduce){body{animation:none!important}}
 
+
+/* CreatorLab expansion */
+.creator-suite{margin:42px 0 0}
+.suite-head{display:flex;justify-content:space-between;gap:18px;align-items:end;margin-bottom:18px;flex-wrap:wrap}
+.suite-head h2{font-size:27px;letter-spacing:-1px;margin:5px 0}
+.suite-head p{color:var(--muted);font-size:13px;margin:0;max-width:560px}
+.suite-controls{display:flex;gap:8px;flex-wrap:wrap;margin:18px 0}
+.suite-search{flex:1;min-width:190px;border:1px solid #30415b;background:#0b1321;color:#fff;border-radius:9px;padding:10px 12px}
+.suite-filter,.suite-fav{border:1px solid #30415b;background:#121e31;color:#aebbd0;border-radius:9px;padding:9px 12px;font-size:12px}
+.suite-filter.active,.suite-fav.active{border-color:#8293ff;background:#202c49;color:#fff}
+.suite-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:11px}
+.suite-card{background:#121c2c;border:1px solid #26364d;border-radius:13px;text-align:left;padding:16px;color:inherit;min-height:125px;transition:.2s;position:relative}
+.suite-card:hover{border-color:#7588f7;transform:translateY(-2px)}
+.suite-card[hidden]{display:none}
+.suite-card .tool-icon{margin-bottom:10px}
+.suite-card b{display:block;font-size:14px}.suite-card small{display:block;color:var(--muted);font-size:12px;margin-top:4px}
+.suite-card .fav{position:absolute;right:12px;top:10px;border:0;background:transparent;color:#8190a8;font-size:18px;padding:4px}
+.suite-card .fav.on{color:#aab5ff}
+.suite-workspace{margin-top:14px;padding:22px}
+.suite-workspace h3{margin:4px 0 5px;font-size:21px}
+.suite-workspace p{margin:0 0 16px;color:var(--muted);font-size:13px}
+.suite-fields{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:13px}
+.suite-fields label{display:block;color:#dce4f2;font-size:12px}
+.suite-fields input,.suite-fields select,.suite-fields textarea{display:block;width:100%;margin-top:6px;padding:10px 11px;border:1px solid #30415b;border-radius:9px;background:#0b1321;color:#fff;outline:none}
+.suite-fields textarea{min-height:125px;resize:vertical}
+.suite-result{margin-top:16px;border:1px solid #35466a;background:linear-gradient(110deg,#101b31,#17213b 55%,#172c38);border-radius:11px;padding:15px;overflow-wrap:anywhere}
+.suite-result strong{display:block;color:#b5bcff;font-size:24px;margin-top:3px}
+.suite-actions{display:flex;gap:9px;flex-wrap:wrap;margin-top:13px;align-items:center}
+.suite-preview{display:flex;gap:14px;align-items:center;flex-wrap:wrap;margin-top:14px}
+.suite-preview img{max-width:180px;max-height:140px;object-fit:contain;border:1px solid #354564;border-radius:8px;background:#080d17}
+.suite-note{font-size:11px;color:#8190a8;margin-top:10px}
+.suite-recent{margin-top:15px;color:#94a1b5;font-size:11px}
+.suite-recent button{border:0;background:transparent;color:#aab5ff;padding:3px 7px;cursor:pointer}
+@media(max-width:700px){.suite-grid{grid-template-columns:repeat(2,1fr)}.suite-fields{grid-template-columns:1fr}.suite-workspace{padding:17px 14px}}
+@media(max-width:390px){.suite-grid{grid-template-columns:1fr}}
+
 </style>
 </head>
 <body>
@@ -86,8 +122,8 @@ body{background-size:100% 100%,140% 140%,140% 140%,auto;animation:ambient-drift 
 <div class="header-right"><a href="#tools" data-i18n="navTools">Tools</a><a href="#about" data-i18n="navAbout">About</a><label class="language-wrap"><span aria-hidden="true">◎</span><select id="language" aria-label="Choose language"><option value="en">EN</option><option value="ru">RU</option></select></label><span class="free-pill" data-i18n="free">✦ Free tools</span></div>
 </div></header>
 <main class="wrap">
-<section class="hero"><div class="eyebrow" data-i18n="eyebrow">THE CREATOR TOOLKIT</div><h1 data-i18n="heroTitle">Create smarter.<br><span>Work faster.</span></h1><p data-i18n="heroText">A collection of simple, powerful tools for video creators, streamers and digital makers. Everything you need, right here.</p></section>
-<section class="stats" aria-label="Site overview"><div class="stat"><strong>06</strong><span data-i18n="available">Available tools</span></div><div class="stat"><strong>Free</strong><span data-i18n="alwaysFree">Always accessible</span></div><div class="stat"><strong>∞</strong><span data-i18n="potential">Creative potential</span></div></section>
+<section class="hero"><div class="eyebrow" data-i18n="eyebrow">THE CREATOR TOOLKIT</div><h1 data-i18n="heroTitle">Create smarter.<br><span>Work faster.</span></h1><p data-i18n="heroText">Free online tools for creators: compress and resize images, estimate YouTube revenue, calculate video and audio sizes, plan streaming bitrates and more.</p></section>
+<section class="stats" aria-label="Site overview"><div class="stat"><strong>12</strong><span data-i18n="available">Available tools</span></div><div class="stat"><strong>Free</strong><span data-i18n="alwaysFree">Always accessible</span></div><div class="stat"><strong>∞</strong><span data-i18n="potential">Creative potential</span></div></section>
 <section id="tools">
 <div class="section-head"><span class="label" data-i18n="explore">EXPLORE</span><div class="filters"><button class="filter active" data-filter="all" data-i18n="filterAll">All tools</button><button class="filter" data-filter="video" data-i18n="filterVideo">Video</button><button class="filter" data-filter="image" data-i18n="filterImage">Image</button><button class="filter" data-filter="other" data-i18n="filterOther">Other</button></div></div>
 <div class="tools">
@@ -106,6 +142,34 @@ body{background-size:100% 100%,140% 140%,140% 140%,auto;animation:ambient-drift 
 <div class="actions"><button class="secondary" id="copy-result" data-i18n="copy">Copy result</button><button class="secondary" id="reset" data-i18n="reset">Reset values</button><span class="copy-status" id="copy-status" aria-live="polite"></span></div><div class="hint" data-i18n="hint">Results update automatically as you type. Calculations run in your browser; your inputs are not uploaded anywhere.</div>
 </div>
 </section>
+
+<section class="creator-suite" id="creator-suite">
+  <div class="suite-head"><div><div class="label">CREATOR WORKSPACE / 02</div><h2 id="suite-title">More tools. More creating.</h2><p id="suite-subtitle">Practical tools for images, audio, YouTube and streaming — processed right in your browser whenever possible.</p></div></div>
+  <div class="suite-controls">
+    <input class="suite-search" id="suite-search" type="search" placeholder="Search tools..." aria-label="Search tools">
+    <button class="suite-filter active" data-suite-filter="all">All</button>
+    <button class="suite-filter" data-suite-filter="image">Image</button>
+    <button class="suite-filter" data-suite-filter="youtube">YouTube</button>
+    <button class="suite-filter" data-suite-filter="audio">Audio</button>
+    <button class="suite-filter" data-suite-filter="streaming">Streaming</button>
+    <button class="suite-filter" data-suite-filter="social">Social</button>
+    <button class="suite-fav" id="suite-favorites">☆ Favorites</button>
+  </div>
+  <div class="suite-grid" id="suite-grid">
+    <button class="suite-card" data-suite-tool="compress" data-suite-category="image"><span class="tool-icon">▧</span><button class="fav" aria-label="Add to favorites">☆</button><b>Image Compressor</b><small>Compress JPG, PNG and WebP in your browser</small></button>
+    <button class="suite-card" data-suite-tool="resize" data-suite-category="image"><span class="tool-icon">⤢</span><button class="fav" aria-label="Add to favorites">☆</button><b>Image Resizer</b><small>Resize images and export a new copy</small></button>
+    <button class="suite-card" data-suite-tool="rpm" data-suite-category="youtube"><span class="tool-icon">▥</span><button class="fav" aria-label="Add to favorites">☆</button><b>YouTube RPM Calculator</b><small>Estimate revenue from views and RPM</small></button>
+    <button class="suite-card" data-suite-tool="audio" data-suite-category="audio"><span class="tool-icon">♫</span><button class="fav" aria-label="Add to favorites">☆</button><b>Audio File Size</b><small>Estimate uncompressed WAV file size</small></button>
+    <button class="suite-card" data-suite-tool="stream" data-suite-category="streaming"><span class="tool-icon">◉</span><button class="fav" aria-label="Add to favorites">☆</button><b>Stream Bitrate Planner</b><small>Estimate a starting bitrate for your stream</small></button>
+    <button class="suite-card" data-suite-tool="text" data-suite-category="social"><span class="tool-icon">¶</span><button class="fav" aria-label="Add to favorites">☆</button><b>Text Counter</b><small>Count characters, words and lines</small></button>
+  </div>
+  <div class="panel suite-workspace" id="suite-workspace" aria-live="polite">
+    <div class="label">QUICK TOOL</div><h3 id="suite-tool-title">Choose a tool</h3><p id="suite-tool-desc">Select any card above to open its workspace.</p>
+    <div class="suite-note">Your files stay on your device for image processing. CreatorLab does not upload them.</div>
+  </div>
+  <div class="suite-recent" id="suite-recent">Recently used: none yet</div>
+</section>
+
 <section class="about" id="about"><div class="label" data-i18n="aboutLabel">BUILT FOR CREATORS</div><h3 data-i18n="aboutTitle">Less guessing. More creating.</h3><p data-i18n="aboutText">CreatorLab brings everyday production calculations into one clean workspace. No complicated software, no unnecessary steps — just useful tools.</p></section>
 </main>
 <footer class="wrap"><span>© <span id="year"></span> CreatorLab</span><span data-i18n="footer">Made for the creative process ✦</span></footer>
@@ -172,6 +236,60 @@ $('copy-result').addEventListener('click',async()=>{const value=$('result').text
 $('fields').addEventListener('input',calculate);$('reset').addEventListener('click',render);$('language').addEventListener('change',e=>{language=e.target.value;try{localStorage.setItem('creatorlab-language',language)}catch(err){}applyLanguage()});try{language=localStorage.getItem('creatorlab-language')||'en'}catch(err){}$('year').textContent=new Date().getFullYear();applyLanguage();
 })();
 </script>
+
+/* Additional creator tools, local preferences and file processing */
+(()=>{
+const root=document.getElementById('creator-suite');if(!root)return;
+const $=id=>document.getElementById(id);
+let lang=document.documentElement.lang==='ru'?'ru':'en',active='compress',filter='all',onlyFav=false,sourceImage=null,outputUrl=null;
+const words={
+en:{title:'More tools. More creating.',subtitle:'Practical tools for images, audio, YouTube and streaming — processed right in your browser whenever possible.',search:'Search tools...',all:'All',favorites:'☆ Favorites',choose:'Choose a tool',chooseDesc:'Select any card above to open its workspace.',recent:'Recently used: ',none:'none yet',compress:'Compress images locally and download a smaller copy.',resize:'Resize an image to exact pixel dimensions.',rpm:'Estimate revenue using your own RPM assumption. Actual earnings vary by channel, audience and monetization.',audio:'Estimate uncompressed PCM/WAV size from duration and audio format.',stream:'Choose a resolution and frame rate to see a practical starting bitrate range.',text:'Count characters, words and lines in titles, captions or descriptions.',file:'Choose image',format:'Output format',quality:'Quality',width:'Width (px)',height:'Height (px)',duration:'Duration (minutes)',views:'Views',rpmValue:'RPM (revenue per 1,000 views)',sample:'Sample rate (Hz)',depth:'Bit depth',channels:'Channels',resolution:'Resolution',fps:'Frame rate',upload:'Upload speed (Mbps)',textLabel:'Your text',compressBtn:'Compress & preview',resizeBtn:'Resize & preview',download:'Download image',calculate:'Calculate',revenue:'Estimated revenue',wav:'Estimated WAV size',rate:'Suggested video bitrate',count:'Characters',words:'Words',lines:'Lines',before:'Original',after:'Compressed',saved:'smaller',noImage:'Choose an image first.',invalid:'Please enter valid positive values.',limit:'This estimate is illustrative, not a promise of platform earnings or a guaranteed streaming setting.',private:'Image processing happens in this browser. Your image is not uploaded.',noFile:'No image selected',copied:'Copied',copy:'Copy',allFiles:'Select a file',kb:'Estimated size',qualityHint:'Lower quality usually means a smaller file. PNG input is exported as JPEG or WebP.',streamHint:'Use this as a starting point and test your actual connection and encoder.',audioHint:'WAV estimate assumes uncompressed PCM audio and excludes small header overhead.'},
+ru:{title:'Больше инструментов. Больше творчества.',subtitle:'Практичные инструменты для изображений, аудио, YouTube и стримов. Обработка по возможности прямо в браузере.',search:'Поиск инструментов...',all:'Все',favorites:'☆ Избранное',choose:'Выберите инструмент',chooseDesc:'Нажмите на карточку выше, чтобы открыть инструмент.',recent:'Недавно использовались: ',none:'пока нет',compress:'Сжимайте изображения прямо в браузере и скачивайте уменьшенную копию.',resize:'Изменяйте изображение до точных размеров в пикселях.',rpm:'Оценка дохода на основе заданного RPM. Реальный доход зависит от канала, аудитории и монетизации.',audio:'Расчёт размера несжатого PCM/WAV по длительности и параметрам аудио.',stream:'Выберите разрешение и FPS, чтобы получить ориентировочный диапазон битрейта.',text:'Считайте символы, слова и строки в заголовках и описаниях.',file:'Выберите изображение',format:'Формат результата',quality:'Качество',width:'Ширина (px)',height:'Высота (px)',duration:'Длительность (минуты)',views:'Просмотры',rpmValue:'RPM (доход за 1000 просмотров)',sample:'Частота дискретизации (Гц)',depth:'Глубина (бит)',channels:'Каналы',resolution:'Разрешение',fps:'Частота кадров',upload:'Скорость отдачи (Мбит/с)',textLabel:'Ваш текст',compressBtn:'Сжать и посмотреть',resizeBtn:'Изменить размер',download:'Скачать изображение',calculate:'Рассчитать',revenue:'Примерный доход',wav:'Примерный размер WAV',rate:'Рекомендуемый стартовый битрейт',count:'Символов',words:'Слов',lines:'Строк',before:'Исходный',after:'После сжатия',saved:'меньше',noImage:'Сначала выберите изображение.',invalid:'Введите корректные положительные значения.',limit:'Это ориентировочная оценка, а не обещание дохода платформы или гарантированная настройка стрима.',private:'Изображение обрабатывается в браузере и не загружается на сервер.',noFile:'Файл не выбран',copied:'Скопировано',copy:'Копировать',allFiles:'Выберите файл',kb:'Примерный размер',qualityHint:'Чем ниже качество, тем меньше файл. PNG будет экспортирован в JPEG или WebP.',streamHint:'Используйте значение как отправную точку и проверьте реальное соединение и настройки кодировщика.',audioHint:'Расчёт предполагает несжатое PCM-аудио и не учитывает небольшой заголовок WAV.'}
+};
+const t=k=>words[lang][k]||words.en[k]||k;
+const names={compress:'Image Compressor',resize:'Image Resizer',rpm:'YouTube RPM Calculator',audio:'Audio File Size',stream:'Stream Bitrate Planner',text:'Text Counter'};
+const namesRu={compress:'Сжатие изображений',resize:'Изменение размера изображения',rpm:'Калькулятор YouTube RPM',audio:'Размер аудиофайла',stream:'Планировщик битрейта стрима',text:'Счётчик текста'};
+const descriptions={compress:'compress',resize:'resize',rpm:'rpm',audio:'audio',stream:'stream',text:'text'};
+const cardNames={compress:'Image Compressor',resize:'Image Resizer',rpm:'YouTube RPM Calculator',audio:'Audio File Size',stream:'Stream Bitrate Planner',text:'Text Counter'};
+const categories={compress:'image',resize:'image',rpm:'youtube',audio:'audio',stream:'streaming',text:'social'};
+function localizedName(id){return lang==='ru'?namesRu[id]:names[id]}
+function workspace(id){
+active=id;sourceImage=null;if(outputUrl){URL.revokeObjectURL(outputUrl);outputUrl=null}
+const title=localizedName(id),desc=t(descriptions[id]);$('suite-tool-title').textContent=title;$('suite-tool-desc').textContent=desc;
+let html='';
+if(id==='compress')html='<div class="suite-fields"><label>'+t('file')+'<input id="suite-file" type="file" accept="image/png,image/jpeg,image/webp"></label><label>'+t('format')+'<select id="suite-format"><option value="image/webp">WebP</option><option value="image/jpeg">JPEG</option></select></label><label>'+t('quality')+' <span id="suite-quality-value">80%</span><input id="suite-quality" type="range" min="30" max="100" value="80"></label></div><div class="suite-actions"><button class="primary" id="suite-run">'+t('compressBtn')+'</button></div><div class="suite-preview" id="suite-preview"></div><div class="suite-note">'+t('private')+' '+t('qualityHint')+'</div>';
+if(id==='resize')html='<div class="suite-fields"><label>'+t('file')+'<input id="suite-file" type="file" accept="image/*"></label><label>'+t('width')+'<input id="suite-width" type="number" min="1" max="12000" value="1280"></label><label>'+t('height')+'<input id="suite-height" type="number" min="1" max="12000" value="720"></label><label><span> </span><select id="suite-format"><option value="image/webp">WebP</option><option value="image/jpeg">JPEG</option><option value="image/png">PNG</option></select></label></div><div class="suite-actions"><button class="primary" id="suite-run">'+t('resizeBtn')+'</button></div><div class="suite-preview" id="suite-preview"></div><div class="suite-note">'+t('private')+'</div>';
+if(id==='rpm')html='<div class="suite-fields"><label>'+t('views')+'<input id="suite-views" type="number" min="0" value="100000"></label><label>'+t('rpmValue')+'<input id="suite-rpm" type="number" min="0" step="0.01" value="2.5"></label></div><div class="suite-result"><span class="label">'+t('revenue')+'</span><strong id="suite-output">—</strong></div><div class="suite-note">'+t('limit')+'</div>';
+if(id==='audio')html='<div class="suite-fields"><label>'+t('duration')+'<input id="suite-duration" type="number" min="0.01" step="any" value="5"></label><label>'+t('sample')+'<select id="suite-sample"><option value="44100">44,100</option><option value="48000">48,000</option><option value="96000">96,000</option></select></label><label>'+t('depth')+'<select id="suite-depth"><option value="16">16</option><option value="24">24</option><option value="32">32</option></select></label><label>'+t('channels')+'<select id="suite-channels"><option value="1">Mono</option><option value="2" selected>Stereo</option></select></label></div><div class="suite-result"><span class="label">'+t('wav')+'</span><strong id="suite-output">—</strong></div><div class="suite-note">'+t('audioHint')+'</div>';
+if(id==='stream')html='<div class="suite-fields"><label>'+t('resolution')+'<select id="suite-resolution"><option value="720">1280 × 720</option><option value="1080" selected>1920 × 1080</option><option value="1440">2560 × 1440</option><option value="2160">3840 × 2160</option></select></label><label>'+t('fps')+'<select id="suite-fps"><option value="30">30 FPS</option><option value="60" selected>60 FPS</option></select></label><label>'+t('upload')+'<input id="suite-upload" type="number" min="1" value="20"></label></div><div class="suite-result"><span class="label">'+t('rate')+'</span><strong id="suite-output">—</strong></div><div class="suite-note">'+t('streamHint')+' '+t('limit')+'</div>';
+if(id==='text')html='<div class="suite-fields"><label style="grid-column:1/-1">'+t('textLabel')+'<textarea id="suite-text" placeholder="'+(lang==='ru'?'Вставьте заголовок, подпись или описание...':'Paste a title, caption or description...')+'"></textarea></label></div><div class="suite-result"><span class="label">'+t('count')+'</span><strong id="suite-char-count">0</strong><div id="suite-text-stats" class="result-detail">0 '+t('words').toLowerCase()+' · 0 '+t('lines').toLowerCase()+'</div></div>';
+$('suite-tool-body')?.remove();const body=document.createElement('div');body.id='suite-tool-body';body.innerHTML=html;$('suite-workspace').appendChild(body);
+if(id==='compress'||id==='resize'){$('suite-file').addEventListener('change',e=>{sourceImage=e.target.files?.[0]||null});$('suite-run').addEventListener('click',processImage);if(id==='compress')$('suite-quality').addEventListener('input',e=>$('suite-quality-value').textContent=e.target.value+'%')}
+if(id==='rpm'){['suite-views','suite-rpm'].forEach(x=>$(x).addEventListener('input',calcRpm));calcRpm()}
+if(id==='audio'){['suite-duration','suite-sample','suite-depth','suite-channels'].forEach(x=>$(x).addEventListener('input',calcAudio));calcAudio()}
+if(id==='stream'){['suite-resolution','suite-fps','suite-upload'].forEach(x=>$(x).addEventListener('input',calcStream));calcStream()}
+if(id==='text')$('suite-text').addEventListener('input',calcText);
+try{let recent=JSON.parse(localStorage.getItem('creatorlab-recent')||'[]');recent=[id,...recent.filter(x=>x!==id)].slice(0,4);localStorage.setItem('creatorlab-recent',JSON.stringify(recent));renderRecent()}catch(e){}
+document.querySelectorAll('.suite-card').forEach(card=>card.classList.toggle('active',card.dataset.suiteTool===id));
+}
+function processImage(){
+const preview=$('suite-preview');if(!sourceImage){preview.textContent=t('noImage');return}
+if(!sourceImage.type.startsWith('image/')){preview.textContent=t('noImage');return}
+const url=URL.createObjectURL(sourceImage),img=new Image();img.onload=()=>{const canvas=document.createElement('canvas');let w=img.naturalWidth,h=img.naturalHeight;if(active==='resize'){w=Number($('suite-width').value);h=Number($('suite-height').value);if(!Number.isInteger(w)||!Number.isInteger(h)||w<1||h<1||w>12000||h>12000){preview.textContent=t('invalid');URL.revokeObjectURL(url);return}}canvas.width=w;canvas.height=h;const ctx=canvas.getContext('2d');if(!ctx){preview.textContent='Canvas unavailable';URL.revokeObjectURL(url);return}if($('suite-format').value==='image/jpeg'){ctx.fillStyle='#fff';ctx.fillRect(0,0,w,h)}ctx.drawImage(img,0,0,w,h);const quality=active==='compress'?Number($('suite-quality').value)/100:.92;canvas.toBlob(blob=>{URL.revokeObjectURL(url);if(!blob){preview.textContent='Could not process this image';return}if(outputUrl)URL.revokeObjectURL(outputUrl);outputUrl=URL.createObjectURL(blob);const imgEl=document.createElement('img');imgEl.src=outputUrl;imgEl.alt='Processed image preview';const info=document.createElement('div');const before=(sourceImage.size/1024).toFixed(1),after=(blob.size/1024).toFixed(1);info.textContent=t('before')+': '+before+' KB · '+t('after')+': '+after+' KB';const link=document.createElement('a');link.href=outputUrl;link.download='creatorlab-'+(active==='resize'?'resized':'compressed')+'.'+(blob.type==='image/jpeg'?'jpg':blob.type==='image/png'?'png':'webp');link.className='primary';link.textContent=t('download');preview.replaceChildren(imgEl,info,link)},$('suite-format').value,quality)};img.onerror=()=>{preview.textContent='Could not read this image';URL.revokeObjectURL(url)};img.src=url;
+}
+function calcRpm(){const v=Number($('suite-views').value),r=Number($('suite-rpm').value);$('suite-output').textContent=v>=0&&r>=0&&Number.isFinite(v*r)?new Intl.NumberFormat(lang==='ru'?'ru-RU':'en-US',{style:'currency',currency:'USD',maximumFractionDigits:2}).format(v*r/1000):t('invalid')}
+function calcAudio(){const d=Number($('suite-duration').value),s=Number($('suite-sample').value),b=Number($('suite-depth').value),c=Number($('suite-channels').value);const bytes=d*60*s*b*c/8;if(d<=0||!Number.isFinite(bytes)){$('suite-output').textContent=t('invalid');return}$('suite-output').textContent=(bytes/1e9).toFixed(3)+' GB · '+(bytes/1048576).toFixed(1)+' MB'}
+function calcStream(){const res=Number($('suite-resolution').value),fps=Number($('suite-fps').value),upload=Number($('suite-upload').value);if(upload<=0){$('suite-output').textContent=t('invalid');return}const base={720:3.5,1080:6,1440:12,2160:25}[res]*(fps===60?1.5:1);const lo=base*.8,hi=base,cap=upload*.65;const out=hi>cap?((lang==='ru'?'Осторожно: ':'Caution: ')+lo.toFixed(1)+'–'+Math.min(hi,cap).toFixed(1)+' Mbps; '+(lang==='ru'?'скорость отдачи может быть ограничением':'upload may be the limiting factor')):(lo.toFixed(1)+'–'+hi.toFixed(1)+' Mbps');$('suite-output').textContent=out}
+function calcText(){const s=$('suite-text').value;$('suite-char-count').textContent=s.length.toLocaleString();const wordsCount=(s.trim().match(/\S+/g)||[]).length,lines=s.length?s.split(/\r\n|\r|\n/).length:0;$('suite-text-stats').textContent=wordsCount+' '+t('words').toLowerCase()+' · '+lines+' '+t('lines').toLowerCase()}
+function renderRecent(){let a=[];try{a=JSON.parse(localStorage.getItem('creatorlab-recent')||'[]')}catch(e){}$('suite-recent').textContent=t('recent')+(a.length?a.map(x=>localizedName(x)).join(' · '):t('none'))}
+function refreshCards(){const q=$('suite-search').value.toLowerCase();document.querySelectorAll('.suite-card').forEach(card=>{const id=card.dataset.suiteTool;let fav=[];try{fav=JSON.parse(localStorage.getItem('creatorlab-favorites')||'[]')}catch(e){}const match=(filter==='all'||card.dataset.suiteCategory===filter)&&(!onlyFav||fav.includes(id))&&card.textContent.toLowerCase().includes(q);card.hidden=!match;const star=card.querySelector('.fav');star.textContent=fav.includes(id)?'★':'☆';star.classList.toggle('on',fav.includes(id))})}
+document.querySelectorAll('.suite-card').forEach(card=>card.addEventListener('click',e=>{if(e.target.closest('.fav')){e.stopPropagation();let a=[];try{a=JSON.parse(localStorage.getItem('creatorlab-favorites')||'[]')}catch(err){}const id=card.dataset.suiteTool;a=a.includes(id)?a.filter(x=>x!==id):[...a,id];try{localStorage.setItem('creatorlab-favorites',JSON.stringify(a))}catch(err){}refreshCards();return}workspace(card.dataset.suiteTool)}));
+document.querySelectorAll('[data-suite-filter]').forEach(b=>b.addEventListener('click',()=>{filter=b.dataset.suiteFilter;onlyFav=false;$('suite-favorites').classList.remove('active');document.querySelectorAll('[data-suite-filter]').forEach(x=>x.classList.toggle('active',x===b));refreshCards()}));
+$('suite-search').addEventListener('input',refreshCards);$('suite-favorites').addEventListener('click',()=>{onlyFav=!onlyFav;$('suite-favorites').classList.toggle('active',onlyFav);refreshCards()});
+$('language').addEventListener('change',e=>{lang=e.target.value;const names=lang==='ru'?['Сжатие изображений','Изменение размера изображения','Калькулятор YouTube RPM','Размер аудиофайла','Планировщик битрейта стрима','Счётчик текста']:['Image Compressor','Image Resizer','YouTube RPM Calculator','Audio File Size','Stream Bitrate Planner','Text Counter'];document.querySelectorAll('.suite-card').forEach((card,i)=>{card.querySelector('b').textContent=names[i]});$('suite-title').textContent=t('title');$('suite-subtitle').textContent=t('subtitle');$('suite-search').placeholder=t('search');$('suite-favorites').textContent=t('favorites');document.querySelector('[data-suite-filter="all"]').textContent=t('all');workspace(active)});
+$('suite-title').textContent=t('title');$('suite-subtitle').textContent=t('subtitle');$('suite-search').placeholder=t('search');$('suite-favorites').textContent=t('favorites');document.querySelector('[data-suite-filter="all"]').textContent=t('all');refreshCards();renderRecent();workspace('compress');
+})();
+
 <!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "dc7da355928248fa85dc4fc06e64e73d"}'></script><!-- End Cloudflare Web Analytics -->
 </body>
 </html>
