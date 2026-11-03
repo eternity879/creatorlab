@@ -125,7 +125,7 @@ show(b.toFixed(2)+' Mbps','Estimated video bitrate after reserving space for aud
 const w=n('width'),h=n('height'),nw=n('newwidth');
 if(w<=0||h<=0||nw<=0)return show('Check your inputs','All dimensions must be positive.');
 const nh=Math.round(nw*h/w);show(nh+' px','New dimensions: '+nw+' × '+nh+' px. Original aspect ratio preserved.');
-}else{
+}else if(current==='download'){
 const f=n('filesize'),s=n('speed');
 if(f<=0||s<=0)return show('Check your inputs','File size and internet speed must be positive.');
 const sec=f*8*1000/s,days=Math.floor(sec/86400),hours=Math.floor(sec%86400/3600),mins=Math.floor(sec%3600/60),secs=Math.round(sec%60);
