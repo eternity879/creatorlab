@@ -43,7 +43,7 @@ header{height:76px;border-bottom:1px solid #202b3e;display:flex;align-items:cent
 <div class="calc-top"><div><div class="label">CALCULATOR / <span id="type">VIDEO</span></div><h2 id="title">Video file size calculator</h2><p id="description">Estimate the final size of your video based on bitrate and duration.</p></div><div class="calc-emoji" id="emoji">◫</div></div>
 <div class="fields" id="fields"></div>
 <div class="result" aria-live="polite"><div class="label" id="result-label">ESTIMATED FILE SIZE</div><div class="result-value" id="result">1.15 GB</div><div class="result-detail" id="detail">Approximate size including audio, excluding container overhead.</div></div>
-<div class="actions"><button class="primary" id="calculate">Calculate result ↗</button><button class="secondary" id="reset">Reset values</button></div><div class="hint">Calculations run in your browser. Your inputs are not uploaded anywhere.</div>
+<div class="actions"><button class="secondary" id="reset">Reset values</button></div><div class="hint">Results update automatically as you type. Calculations run in your browser; your inputs are not uploaded anywhere.</div>
 </div>
 </section>
 <section class="about" id="about"><div class="label">BUILT FOR CREATORS</div><h3>Less guessing. More creating.</h3><p>CreatorLab brings everyday production calculations into one clean workspace. No complicated software, no unnecessary steps — just useful tools.</p></section>
@@ -93,7 +93,7 @@ show(parts.join(' '),'Theoretical estimate. Actual download time depends on netw
 }
 document.querySelectorAll('[data-tool]').forEach(b=>b.addEventListener('click',()=>{current=b.dataset.tool;render()}));
 document.querySelectorAll('[data-filter]').forEach(b=>b.addEventListener('click',()=>{document.querySelectorAll('[data-filter]').forEach(x=>x.classList.toggle('active',x===b));document.querySelectorAll('[data-tool]').forEach(t=>t.hidden=b.dataset.filter!=='all'&&t.dataset.category!==b.dataset.filter)}));
-$('calculate').addEventListener('click',calculate);$('fields').addEventListener('input',calculate);$('reset').addEventListener('click',render);$('year').textContent=new Date().getFullYear();render();
+$('fields').addEventListener('input',calculate);$('reset').addEventListener('click',render);$('year').textContent=new Date().getFullYear();render();
 })();
 </script>
 <!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "dc7da355928248fa85dc4fc06e64e73d"}'></script><!-- End Cloudflare Web Analytics -->
